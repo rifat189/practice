@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Resize And Compress Image</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="upload-box">
+            <input type="file" accept="image/*" hidden>
+            <!-- accept attr is used for declaring the file type like video, audio, image -->
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+            <img src="" alt="">
+            <p>Browse File to Upload</p>
+        </div>
+        <div class="content">
+            <div class="sizes">
+                <div class="width-container">
+                    <label for="width-input">Width</label>
+                    <input type="number" min="0" id="width-input">
+                </div>
+                <div class="height-container">
+                    <label for="height-input">Height</label>
+                    <input type="number" min="0" id="height-input">
+                </div>
+            </div>
+            <div class="checkboxes">
+                <div class="ratio-container">
+                    <input type="checkbox" id="ratio" checked>
+                    <label for="ratio">Lock aspect ratio</label>
+                </div>
+                <div class="quality-container">
+                    <input type="checkbox" id="quality">
+                    <label for="quality">Reduce Quality</label>
+                </div>
+            </div>
+            <div class="btn-holder">
+                <button class="download-btn">Download Image</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="pageLink">
+        <a href="https://www.youtube.com/watch?v=x8U2MTTEjtI&list=PLpwngcHZlPadhRwryAXw3mJWX5KH3T5L3&index=5"><i class="fa fa-video"></i> Tutorial Video</a>
+        <a><i class="fa fa-add"></i> New: keyup (eventListener tag)</a>
+        <a><i class="fa fa-add"></i> New: canvas (html tag)</a>
+        <a><i class="fa fa-add"></i> New: downloading image (script)</a>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
